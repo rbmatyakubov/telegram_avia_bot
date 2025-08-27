@@ -1,0 +1,13 @@
+# fly.toml file generated for avia-bot on 2025-08-27T10:00:00Z
+
+app = "avia-bot" # <-- Здесь будет уникальное имя вашего приложения
+primary_region = "fra" # Регион развертывания, например, Франкфурт
+
+[build]
+  
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = false # <-- ВАЖНО: Запрещаем "засыпание"
+  auto_start_machines = true
+  min_machines_running = 1 # <-- ВАЖНО: Всегда держим 1 машину работающей
