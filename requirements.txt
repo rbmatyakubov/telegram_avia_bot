@@ -1,0 +1,4 @@
+aiogram
+natasha
+pydub
+SpeechRecognition
